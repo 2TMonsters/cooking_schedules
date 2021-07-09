@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Assignment Tasks" max_length="40" name="x_167994_cooking_s_assignment_tasks" type="collection">
+        <element label="Assignment number" max_length="32" name="assignment_number" reference="x_167994_cooking_s_recipe_assignment" type="reference"/>
+        <element label="Recipe name" max_length="32" name="recipe_name" reference="x_167994_cooking_s_recipes" type="reference"/>
+        <element label="Short description" max_length="500" name="short_description" type="string"/>
+        <index name="index">
+            <element name="assignment_number"/>
+        </index>
+        <index name="index2">
+            <element name="recipe_name"/>
+        </index>
+    </element>
+</database>

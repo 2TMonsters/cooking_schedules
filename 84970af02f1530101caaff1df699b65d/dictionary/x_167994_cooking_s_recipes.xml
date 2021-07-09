@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Recipes" max_length="40" name="x_167994_cooking_s_recipes" type="collection">
+        <element label="Cook time" max_length="40" name="cook_time" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="500" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Prep time" max_length="40" name="prep_time" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Recipe name" max_length="100" name="recipe_name" type="string"/>
+    </element>
+</database>

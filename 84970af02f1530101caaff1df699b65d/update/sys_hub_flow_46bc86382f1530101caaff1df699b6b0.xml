@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-quebec-12-09-2020__patch1-02-18-2021</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>recipe_assignment_tasks</internal_name>
+        <label_cache>[{"name":"971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa.item.description","label":"2➛Recipe Steps Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_167994_cooking_s_recipe_steps","column_name":"description"},{"name":"Created_1.current","label":"Trigger➛Recipe Assignment Record","reference":"x_167994_cooking_s_recipe_assignment","reference_display":"Recipe Assignment","type":"reference","base_type":"reference","attributes":{}},{"name":"d0e3652d-ff58-450b-8c48-e51eafb0f8b8.table_name","label":"3➛Assignment Tasks Table","reference":"x_167994_cooking_s_assignment_tasks","reference_display":"Assignment Tasks","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0e3652d-ff58-450b-8c48-e51eafb0f8b8.record","label":"3➛Assignment Tasks Record","reference":"x_167994_cooking_s_assignment_tasks","reference_display":"Assignment Tasks","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa.item","label":"2➛Recipe Steps Record","reference":"x_167994_cooking_s_recipe_steps","reference_display":"Recipe Steps","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"615a6df8-45db-45c8-a692-6e4081dff312.Records","label":"1➛Recipe Steps Records","reference":"x_167994_cooking_s_recipe_steps","reference_display":"Recipe Steps","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"615a6df8-45db-45c8-a692-6e4081dff312.Table","label":"1➛Recipe Steps Table","reference":"x_167994_cooking_s_recipe_steps","reference_display":"Recipe Steps","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"615a6df8-45db-45c8-a692-6e4081dff312.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.recipe_name","label":"Trigger➛Recipe Assignment Record➛Recipe name","reference":"x_167994_cooking_s_recipes","reference_display":"Recipes","type":"reference","base_type":"reference","parent_table_name":"x_167994_cooking_s_recipe_assignment","column_name":"recipe_name"}]</label_cache>
+        <latest_snapshot>babd86782f1530101caaff1df699b677</latest_snapshot>
+        <master_snapshot>c19dc2782f1530101caaff1df699b665</master_snapshot>
+        <name>Recipe Assignment tasks</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>699dc2782f1530101caaff1df699b6e8</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:00:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46bc86382f1530101caaff1df699b6b0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Recipe Assignment tasks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cooking Schedule" source="x_167994_cooking_s">84970af02f1530101caaff1df699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name>sys_hub_flow_46bc86382f1530101caaff1df699b6b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:28</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=46bc86382f1530101caaff1df699b6b0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=46bc86382f1530101caaff1df699b6b0"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_167994_cooking_s_recipe_assignment">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>699dc2782f1530101caaff1df699b6e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:27</sys_updated_on>
+        <table>x_167994_cooking_s_recipe_assignment</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"659dc2782f1530101caaff1df699b6e9","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>46bc86382f1530101caaff1df699b6b0</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:27</sys_created_on>
+        <sys_id>659dc2782f1530101caaff1df699b6e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:27</sys_updated_on>
+        <trigger display_value="">699dc2782f1530101caaff1df699b6e8</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>659dc2782f1530101caaff1df699b6e9</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:27</sys_created_on>
+        <sys_id>6d9dc2782f1530101caaff1df699b6e9</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=46bc86382f1530101caaff1df699b6b0^sys_idNOT IN659dc2782f1530101caaff1df699b6e9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=46bc86382f1530101caaff1df699b6b0^sys_idNOT IN5dec8a382f1530101caaff1df699b645"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Recipe Assignment tasks">46bc86382f1530101caaff1df699b6b0</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:01:25</sys_created_on>
+        <sys_id>5dec8a382f1530101caaff1df699b645</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:28</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5dec8a382f1530101caaff1df699b645"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5dec8a382f1530101caaff1df699b645</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:01:25</sys_created_on>
+        <sys_id>51ec8a382f1530101caaff1df699b654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:01:25</sys_updated_on>
+        <value>x_167994_cooking_s_recipe_assignment</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5dec8a382f1530101caaff1df699b645</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:01:25</sys_created_on>
+        <sys_id>d5ec8a382f1530101caaff1df699b653</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:01:25</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=46bc86382f1530101caaff1df699b6b0^sys_idNOT IN8abc86382f1530101caaff1df699b6b2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>46bc86382f1530101caaff1df699b6b0</id>
+        <name>Recipe Assignment tasks</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:00:39</sys_created_on>
+        <sys_id>8abc86382f1530101caaff1df699b6b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:00:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=46bc86382f1530101caaff1df699b6b0^sys_idNOT IN19ecc6382f1530101caaff1df699b6e2,99ec8a382f1530101caaff1df699b63e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Recipe Assignment tasks">46bc86382f1530101caaff1df699b6b0</model>
+        <model_id>46bc86382f1530101caaff1df699b6b0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_46bc86382f1530101caaff1df699b6b0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:01:25</sys_created_on>
+        <sys_id>19ecc6382f1530101caaff1df699b6e2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Recipe Assignment tasks">46bc86382f1530101caaff1df699b6b0</model>
+        <model_id>46bc86382f1530101caaff1df699b6b0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_46bc86382f1530101caaff1df699b6b0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:01:25</sys_created_on>
+        <sys_id>99ec8a382f1530101caaff1df699b63e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=46bc86382f1530101caaff1df699b6b0^sys_idNOT IN3d3d8e382f1530101caaff1df699b62f,db8d82782f1530101caaff1df699b662"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recipe Assignment tasks">46bc86382f1530101caaff1df699b6b0</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:02:49</sys_created_on>
+        <sys_id>3d3d8e382f1530101caaff1df699b62f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:05:05</sys_updated_on>
+        <ui_id>615a6df8-45db-45c8-a692-6e4081dff312</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3d3d8e382f1530101caaff1df699b62f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3d3d8e382f1530101caaff1df699b62f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:02:49</sys_created_on>
+        <sys_id>fd3d8e382f1530101caaff1df699b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:02:49</sys_updated_on>
+        <value>x_167994_cooking_s_recipe_steps</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3d3d8e382f1530101caaff1df699b62f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>3d3d8e382f1530101caaff1df699b62f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:02:49</sys_created_on>
+        <sys_id>353d8e382f1530101caaff1df699b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:02:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>recipe={{Created_1.current.recipe_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>3d3d8e382f1530101caaff1df699b62f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:02:49</sys_created_on>
+        <sys_id>7d3d8e382f1530101caaff1df699b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:02:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recipe Assignment tasks">46bc86382f1530101caaff1df699b6b0</flow>
+        <order>3</order>
+        <parent_ui_id>971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:17</sys_created_on>
+        <sys_id>db8d82782f1530101caaff1df699b662</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:05:05</sys_updated_on>
+        <ui_id>d0e3652d-ff58-450b-8c48-e51eafb0f8b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=db8d82782f1530101caaff1df699b662"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>db8d82782f1530101caaff1df699b662</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:17</sys_created_on>
+        <sys_id>978d82782f1530101caaff1df699b664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:17</sys_updated_on>
+        <value>x_167994_cooking_s_assignment_tasks</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=db8d82782f1530101caaff1df699b662"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>db8d82782f1530101caaff1df699b662</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:17</sys_created_on>
+        <sys_id>538d82782f1530101caaff1df699b664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>db8d82782f1530101caaff1df699b662</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:17</sys_created_on>
+        <sys_id>178d82782f1530101caaff1df699b664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>assignment_number={{Created_1.current}}^short_description={{971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa.item.description}}^recipe_name={{Created_1.current.recipe_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=46bc86382f1530101caaff1df699b6b0^sys_idNOT INb13d8e382f1530101caaff1df699b634"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">753d8e382f1530101caaff1df699b633</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Recipe Assignment tasks">46bc86382f1530101caaff1df699b6b0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:02:49</sys_created_on>
+        <sys_id>b13d8e382f1530101caaff1df699b634</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:28</sys_updated_on>
+        <ui_id>971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b13d8e382f1530101caaff1df699b634"/>
+    <sys_element_mapping action="delete_multiple" query="id=b13d8e382f1530101caaff1df699b634"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>b13d8e382f1530101caaff1df699b634</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:02:49</sys_created_on>
+        <sys_id>fd3d8e382f1530101caaff1df699b650</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:02:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{615a6df8-45db-45c8-a692-6e4081dff312.Records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_46bc86382f1530101caaff1df699b6b0^sys_idNOT IN91ec8a382f1530101caaff1df699b63d,d9ec8a382f1530101caaff1df699b642"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_46bc86382f1530101caaff1df699b6b0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:01:25</sys_created_on>
+        <sys_id>91ec8a382f1530101caaff1df699b63d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cooking Schedule" source="x_167994_cooking_s">84970af02f1530101caaff1df699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:01:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_46bc86382f1530101caaff1df699b6b0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:01:25</sys_created_on>
+        <sys_id>d9ec8a382f1530101caaff1df699b642</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cooking Schedule" source="x_167994_cooking_s">84970af02f1530101caaff1df699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:01:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=46bc86382f1530101caaff1df699b6b0^sys_idNOT INf99dc2782f1530101caaff1df699b6ea"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f99dc2782f1530101caaff1df699b6ea","name":"plan"}}</plan>
+        <plan_id>46bc86382f1530101caaff1df699b6b0</plan_id>
+        <snapshot>babd86782f1530101caaff1df699b677</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f99dc2782f1530101caaff1df699b6ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:27</sys_updated_on>
+        <trigger display_value="">699dc2782f1530101caaff1df699b6e8</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>recipe_assignment_tasks</internal_name>
+        <label_cache>[{"name":"971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa.item.description","label":"2➛Recipe Steps Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_167994_cooking_s_recipe_steps","column_name":"description"},{"name":"Created_1.current","label":"Trigger➛Recipe Assignment Record","reference":"x_167994_cooking_s_recipe_assignment","reference_display":"Recipe Assignment","type":"reference","base_type":"reference","attributes":{}},{"name":"d0e3652d-ff58-450b-8c48-e51eafb0f8b8.table_name","label":"3➛Assignment Tasks Table","reference":"x_167994_cooking_s_assignment_tasks","reference_display":"Assignment Tasks","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0e3652d-ff58-450b-8c48-e51eafb0f8b8.record","label":"3➛Assignment Tasks Record","reference":"x_167994_cooking_s_assignment_tasks","reference_display":"Assignment Tasks","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa.item","label":"2➛Recipe Steps Record","reference":"x_167994_cooking_s_recipe_steps","reference_display":"Recipe Steps","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"615a6df8-45db-45c8-a692-6e4081dff312.Records","label":"1➛Recipe Steps Records","reference":"x_167994_cooking_s_recipe_steps","reference_display":"Recipe Steps","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"615a6df8-45db-45c8-a692-6e4081dff312.Table","label":"1➛Recipe Steps Table","reference":"x_167994_cooking_s_recipe_steps","reference_display":"Recipe Steps","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"615a6df8-45db-45c8-a692-6e4081dff312.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.recipe_name","label":"Trigger➛Recipe Assignment Record➛Recipe name","reference":"x_167994_cooking_s_recipes","reference_display":"Recipes","type":"reference","base_type":"reference","parent_table_name":"x_167994_cooking_s_recipe_assignment","column_name":"recipe_name"}]</label_cache>
+        <master>true</master>
+        <name>Recipe Assignment tasks</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Recipe Assignment tasks">46bc86382f1530101caaff1df699b6b0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c19dc2782f1530101caaff1df699b665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:24</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c19dc2782f1530101caaff1df699b665"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c19dc2782f1530101caaff1df699b665"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c19dc2782f1530101caaff1df699b665^sys_idNOT IN919dc2782f1530101caaff1df699b6c4"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Recipe Assignment tasks">c19dc2782f1530101caaff1df699b665</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>919dc2782f1530101caaff1df699b6c4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:27</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=919dc2782f1530101caaff1df699b6c4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>919dc2782f1530101caaff1df699b6c4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>599dc2782f1530101caaff1df699b6c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <value>x_167994_cooking_s_recipe_assignment</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>919dc2782f1530101caaff1df699b6c4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>959dc2782f1530101caaff1df699b6c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c19dc2782f1530101caaff1df699b665^sys_idNOT IN059dc2782f1530101caaff1df699b666"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c19dc2782f1530101caaff1df699b665</id>
+        <name>Recipe Assignment tasks</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:24</sys_created_on>
+        <sys_id>059dc2782f1530101caaff1df699b666</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=c19dc2782f1530101caaff1df699b665^sys_idNOT IN419dc2782f1530101caaff1df699b67f,c59dc2782f1530101caaff1df699b667"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Recipe Assignment tasks">c19dc2782f1530101caaff1df699b665</model>
+        <model_id>c19dc2782f1530101caaff1df699b665</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c19dc2782f1530101caaff1df699b665</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>419dc2782f1530101caaff1df699b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Recipe Assignment tasks">c19dc2782f1530101caaff1df699b665</model>
+        <model_id>c19dc2782f1530101caaff1df699b665</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c19dc2782f1530101caaff1df699b665</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:24</sys_created_on>
+        <sys_id>c59dc2782f1530101caaff1df699b667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c19dc2782f1530101caaff1df699b665^sys_idNOT IN999dc2782f1530101caaff1df699b6c2,dd9dc2782f1530101caaff1df699b6a2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recipe Assignment tasks">c19dc2782f1530101caaff1df699b665</flow>
+        <order>3</order>
+        <parent_ui_id>971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>999dc2782f1530101caaff1df699b6c2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <ui_id>d0e3652d-ff58-450b-8c48-e51eafb0f8b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=999dc2782f1530101caaff1df699b6c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>999dc2782f1530101caaff1df699b6c2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>9d9dc2782f1530101caaff1df699b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <value>x_167994_cooking_s_assignment_tasks</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=999dc2782f1530101caaff1df699b6c2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>999dc2782f1530101caaff1df699b6c2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>599dc2782f1530101caaff1df699b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>999dc2782f1530101caaff1df699b6c2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>1d9dc2782f1530101caaff1df699b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>assignment_number={{Created_1.current}}^short_description={{971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa.item.description}}^recipe_name={{Created_1.current.recipe_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recipe Assignment tasks">c19dc2782f1530101caaff1df699b665</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>dd9dc2782f1530101caaff1df699b6a2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <ui_id>615a6df8-45db-45c8-a692-6e4081dff312</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dd9dc2782f1530101caaff1df699b6a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dd9dc2782f1530101caaff1df699b6a2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>599dc2782f1530101caaff1df699b6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <value>x_167994_cooking_s_recipe_steps</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dd9dc2782f1530101caaff1df699b6a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>dd9dc2782f1530101caaff1df699b6a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>159dc2782f1530101caaff1df699b6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>recipe={{Created_1.current.recipe_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>dd9dc2782f1530101caaff1df699b6a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>d59dc2782f1530101caaff1df699b6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c19dc2782f1530101caaff1df699b665^sys_idNOT IN8d9dc2782f1530101caaff1df699b68b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">753d8e382f1530101caaff1df699b633</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Recipe Assignment tasks">c19dc2782f1530101caaff1df699b665</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>8d9dc2782f1530101caaff1df699b68b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <ui_id>971cbbca-1698-4f55-b4b8-ceb8d3f7fdaa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8d9dc2782f1530101caaff1df699b68b"/>
+    <sys_element_mapping action="delete_multiple" query="id=8d9dc2782f1530101caaff1df699b68b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>8d9dc2782f1530101caaff1df699b68b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>959dc2782f1530101caaff1df699b69b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{615a6df8-45db-45c8-a692-6e4081dff312.Records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c19dc2782f1530101caaff1df699b665^sys_idNOT IN019dc2782f1530101caaff1df699b67b,019dc2782f1530101caaff1df699b685"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c19dc2782f1530101caaff1df699b665</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:24</sys_created_on>
+        <sys_id>019dc2782f1530101caaff1df699b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cooking Schedule" source="x_167994_cooking_s">84970af02f1530101caaff1df699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c19dc2782f1530101caaff1df699b665</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 21:04:25</sys_created_on>
+        <sys_id>019dc2782f1530101caaff1df699b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cooking Schedule" source="x_167994_cooking_s">84970af02f1530101caaff1df699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 21:04:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

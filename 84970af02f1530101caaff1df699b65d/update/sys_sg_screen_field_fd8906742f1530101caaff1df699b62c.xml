@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="INSERT_OR_UPDATE">
+        <data_item_field_name>number</data_item_field_name>
+        <description_text/>
+        <description_text_field/>
+        <description_text_type/>
+        <field_name/>
+        <hidden>false</hidden>
+        <order>50</order>
+        <record_id_field/>
+        <screen display_value="Details">798906742f1530101caaff1df699b624</screen>
+        <screen_data_item_table>x_167994_cooking_s_recipe_steps</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-09 20:46:43</sys_created_on>
+        <sys_id>fd8906742f1530101caaff1df699b62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>number</sys_name>
+        <sys_package display_value="Cooking Schedule" source="x_167994_cooking_s">84970af02f1530101caaff1df699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cooking Schedule">84970af02f1530101caaff1df699b65d</sys_scope>
+        <sys_update_name>sys_sg_screen_field_fd8906742f1530101caaff1df699b62c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-09 20:46:43</sys_updated_on>
+        <type>auto</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+    <sys_translated_text action="delete_multiple" query="documentkey=fd8906742f1530101caaff1df699b62c"/>
+</record_update>
